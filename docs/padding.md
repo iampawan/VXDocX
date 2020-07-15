@@ -1,5 +1,5 @@
 ---
-id: doc3
+id: padding
 title: Padding
 ---
 
@@ -67,7 +67,7 @@ To give padding from top and bottom directions.
 
 ---
 
-> Custom Padding from all directions
+## Custom Padding from all directions
 
 ```dart
 anywidget.p({number})
@@ -77,7 +77,7 @@ eg: Text().p(10)
 It will give 10px paddings from all directions.
 ```
 
-> Custom Padding from left, top, right & bottom
+## Custom Padding from left, top, right & bottom
 
 ```dart
 anywidget.pLTRB({l,t,r,b})
@@ -87,7 +87,17 @@ eg: Text().pLTRB(1,2,3,4)
 It will give 1px left, 2px top, 3px right, 4px bottom paddings.
 ```
 
-> Custom Padding in only specified directions
+## Custom Padding symmetrically
+
+```dart
+anywidget.pSymmetric(v:{number},h:{number})
+
+eg: Text().pSymmetric(v:8,h:16)
+
+It will give 8px vertical and 16px horizontal paddings.
+```
+
+## Custom Padding in only specified directions
 
 ```dart
 anywidget.pOnly({sides}:{number})
@@ -97,23 +107,17 @@ eg: Text().pOnly(left:8,top:16)
 It will give 8px left and 16px top paddings.
 ```
 
-> Custom Padding in only specified directions
+## To pad a widget from all directions
 
 ```dart
-.color({yourcolor})
+anywidget.p{number}()
 
- eg: text.color(Colors.blue)
+eg: Text().p8()
+
+It will give 8px paddings from all directions.
 ```
 
-> To use a box(container) color
-
-```dart
-.{colorname}{number}
-
- eg: box.blue900
-```
-
-> Padding inside a box(container)
+## Padding inside a box(container)
 
 ```dart
 box.p{number}

@@ -1,5 +1,5 @@
 ---
-id: doc2
+id: colors
 title: Colors
 ---
 
@@ -19,7 +19,7 @@ eg: Vx.blue900
 
 > To get a hexColor
 
-```javascript
+```dart
 Vx.{colorname}Hex{number}
 
 eg: Vx.blueHex900
@@ -27,7 +27,7 @@ eg: Vx.blueHex900
 
 > To use a text color
 
-```javascript
+```dart
 .{colorname}{number}
 
  eg: text.blue900
@@ -35,7 +35,7 @@ eg: Vx.blueHex900
 
 > To set a text color
 
-```javascript
+```dart
 .color({yourcolor})
 
  eg: text.color(Colors.blue)
@@ -43,7 +43,7 @@ eg: Vx.blueHex900
 
 > To use a box(container) color
 
-```javascript
+```dart
 .{colorname}{number}
 
  eg: box.blue900
@@ -51,7 +51,7 @@ eg: Vx.blueHex900
 
 > To set a box(container) color
 
-```javascript
+```dart
 .color({yourcolor})
 
  eg: box.color(Colors.blue)

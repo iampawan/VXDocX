@@ -1,9 +1,9 @@
 module.exports = {
   someSidebar: {
     "Getting Started": ['install', 'release-notes'],
-    "Customization": ['doc2'],
-    "Layout": ['doc3', 'doc4'],
-    "Typography": ['doc4'],
+    "Customization": ['colors'],
+    "Layout": ['padding', 'text'],
+    "Typography": ['text'],
     Features: ['mdx'],
   },
 };
