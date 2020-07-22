@@ -23,7 +23,7 @@ If you have N number of widget as children for VStack and you want to scroll the
 `scorllVertical()` is a extention which makes children scroll Vertically.
 :::
 
-For a Horizontal variant, see HStack.
+For a Horizontal variant, see [HStack](#hstack-class).
 
 #### VStack Sample
 
@@ -39,7 +39,7 @@ VStack(
 
 **_Above code displays all the texts in Vertical manner_**
 
-### Constructor
+#### VStack Constructor
 
 ```dart
 VStack(this.children, // should not be null
@@ -49,14 +49,114 @@ VStack(this.children, // should not be null
       this.axisSize = MainAxisSize.min})
 ```
 
-### Properties
+#### VStack Properties
 
-- Key ***key*** : Controls how one widget replaces another widget in the tree.
+- Key **_key_** : Controls how one widget replaces another widget in the tree.
 
-- List<Widgets\> ***children*** : The widgets below this widget in the tree.
+- List<Widgets\> **_children_** : The widgets below this widget in the tree.
 
-- MainAxisAlignment ***alignment*** : How the children should be placed along the main axis.
+- MainAxisAlignment **_alignment_** : How the children should be placed along the main axis.
 
-- CrossAxisAlignment ***crossAlignment*** : How the children should be placed along the cross axis.
+- CrossAxisAlignment **_crossAlignment_** : How the children should be placed along the cross axis.
 
-- MainAxisSize ***axisSize*** : How much space should be occupied in the main axis.
+- MainAxisSize **_axisSize_** : How much space should be occupied in the main axis.
+
+-----------------------
+
+### HStack class
+
+A VelocityX HStack widget which is used to display it's children in Horizontal array.HStack widget dose not scroll automatically, If HStack has more children then available room then it is considered as an error.
+
+If you have N number of widget as children for HStack and you want to scroll them. Then consider using `scrollHorizontal()` extention.
+
+:::note
+`scrollHorizontal()` is a extention which makes children scroll Horizontal.
+:::
+
+For a Vertical variant, see [VStack](#vstack-class).
+
+#### HStack Sample
+
+```dart
+HStack(
+    [
+        Text("VelocityX is Super").px12(),
+        Text("Sample Text").px12(),
+        Text("Yet, Another Sample Text").px12(),
+    ],
+).scrollHorizontal().p20();
+```
+
+**_Above code displays all the texts in Horizontal manner_**
+
+#### HStack Constructor
+
+```dart
+  const HStack(this.children, // should not be null
+      {Key key,
+      this.alignment = MainAxisAlignment.start,
+      this.crossAlignment = CrossAxisAlignment.center,
+      this.axisSize = MainAxisSize.min})
+```
+
+#### HStack Properties
+
+- Key **_key_** : Controls how one widget replaces another widget in the tree.
+
+- List<Widgets\> **_children_** : The widgets below this widget in the tree.
+
+- MainAxisAlignment **_alignment_** : How the children should be placed along the main axis.
+
+- CrossAxisAlignment **_crossAlignment_** : How the children should be placed along the cross axis.
+
+- MainAxisSize **_axisSize_** : How much space should be occupied in the main axis.
+
+-----------------------
+
+### ZStack class
+
+A VelocityX ZStack widget is used to display it's children relative to the edges of its box.
+ZSack is useful if you want to overlap several children in a simple way, for example having some text and an image, overlapped with a gradient color as background.
+
+:::note
+Use `alignment` property to align the children of ZStack class.Default Alignment is top start
+:::
+
+#### ZStack Sample
+
+```dart
+ZStack(
+    [
+        VxBox().blue500.height(110.0).width(110.0).make(),
+        VxBox().green500.height(90.0).width(90.0).make(),
+        VxBox().red500.height(70.0).width(70.0).make(),
+    ],
+    alignment: Alignment.center,
+).p20();
+```
+
+**_Above code displays Overlapping Box(containers) which are align in center_**
+
+#### ZStack Constructor
+
+```dart
+  const ZStack(this.children, // should not be null
+      {Key key,
+      this.alignment = AlignmentDirectional.topStart,
+      this.fit = StackFit.loose,
+      this.overflow = Overflow.clip})
+```
+
+#### ZStack Properties
+
+- Key **_key_** : Controls how one widget replaces another widget in the tree.
+
+- List<Widgets\> **_children_** : The widgets below this widget in the tree.
+
+- AlignmentGeometry **_alignment_** : How to align the non-positioned and partially-positioned children in the ZStack.
+
+- StackFit **_fit_** : How to size the non-positioned children in the stack.
+
+- Overflow **_overflow_** : Whether overflowing children should be clipped.
+
+-----------------------
