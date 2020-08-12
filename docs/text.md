@@ -16,7 +16,9 @@ Text, SelectableText and RichText works the same just replace text with selectab
 > You can use any string and convert it to a text widget.
 
 ```dart
-{string}.text\n\neg: 'Pawan'.text.make()
+{string}.text.make()
+
+eg: 'Pawan'.text.make()
 
 It will produce a text with String as Pawan
 ```

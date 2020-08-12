@@ -15,12 +15,12 @@ VelocityX includes utilities for controlling the direction of widgets.
 
 ### VStack class
 
-A VelocityX VStack widget which is used to display it's children in Vertical array.VStack widget dose not scroll automatically, If VStack has more children then available room then it is considered as an error.
+A VelocityX VStack widget which is used to display it's children in vertical array. VStack widget does not scroll automatically, If VStack has more children than the available room then it is considered as an error.
 
 If you have N number of widget as children for VStack and you want to scroll them. Then consider using `scorllVertical()` extention.
 
 :::note
-`scorllVertical()` is a extention which makes children scroll Vertically.
+`scorllVertical()` is an extention which makes children scroll vertically.
 :::
 
 For a Horizontal variant, see [HStack](#hstack-class).
@@ -61,7 +61,7 @@ VStack(this.children, // should not be null
 
 - MainAxisSize **_axisSize_** : How much space should be occupied in the main axis.
 
------------------------
+---
 
 ### HStack class
 
@@ -70,7 +70,7 @@ A VelocityX HStack widget which is used to display it's children in Horizontal a
 If you have N number of widget as children for HStack and you want to scroll them. Then consider using `scrollHorizontal()` extention.
 
 :::note
-`scrollHorizontal()` is a extention which makes children scroll Horizontal.
+`scrollHorizontal()` is an extention which makes children scroll Horizontal.
 :::
 
 For a Vertical variant, see [VStack](#vstack-class).
@@ -111,7 +111,7 @@ HStack(
 
 - MainAxisSize **_axisSize_** : How much space should be occupied in the main axis.
 
------------------------
+---
 
 ### ZStack class
 
@@ -159,4 +159,4 @@ ZStack(
 
 - Overflow **_overflow_** : Whether overflowing children should be clipped.
 
------------------------
+---
