@@ -27,9 +27,9 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-        { to: "blog", label: "Blog", position: "left" },
+        // { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/iampawan/velocityx",
           label: "GitHub",
           position: "right",
         },
@@ -59,8 +59,8 @@ module.exports = {
               href: "https://stackoverflow.com/questions/tagged/velocityx",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Facebook",
+              href: "https://www.facebook.com/groups/425920117856409",
             },
             {
               label: "Twitter",
@@ -77,7 +77,7 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/iampawan/velocityx",
             },
           ],
         },
