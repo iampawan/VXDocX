@@ -74,5 +74,3 @@ Widget build(BuildContext context) {
 ```
 
 **_Above code creates a container of red color along with height & width of 100px with a child as VelocityX Text which is centered_**
-
-
