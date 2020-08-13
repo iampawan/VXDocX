@@ -125,5 +125,3 @@ Here are a few examples to help you get an idea of how to work with VelocityX Ca
 ```dart
    return "VelocityX".text.make().card.shadowColor(Colors.red).make().centered();
 ```
-
-
