@@ -4,9 +4,9 @@ title: Box
 ---
 
 
-VelocityX allows you to quicky create a Container using ```.box()``` extention and ```Vxbox()``` widget.
+VelocityX allows you to quicky create a Container using ```.box()``` extension or ```VxBox()``` widget.
 
-:::tip
+:::important
 
 - You can either use this or ```Container``` widget.
 
@@ -20,9 +20,9 @@ VelocityX allows you to quicky create a Container using ```.box()``` extention a
 | --------------- | :------------: |
 | VxBox()         |    Container() |
 
-**```.box()``` is a VelocityX extention which allows you to create a container**
+**```.box()``` is a VelocityX extension which allows you to create a container**
 
-| Vx Extention       | Flutter Widget |
+| Vx extension       | Flutter Widget |
 | ---------------    | :------------: |
 | .box()            |    Container()  |
 
@@ -34,9 +34,9 @@ VelocityX allows you to quicky create a Container using ```.box()``` extention a
   }
 ```
 
-**_Above code creates a container of red color with a child as VelocityX Text which is centered_**
+> Above code creates a container of red color with a child as VelocityX Text which is centered
 
-#### VxBox Sample using extention
+#### VxBox Sample using extension
 
 ```dart
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ VelocityX allows you to quicky create a Container using ```.box()``` extention a
   }
 ```
 
-**_Above code creates a container of red color with a child as VelocityX Text which is centered_**
+> Above code creates a container of red color with a child as VelocityX Text which is centered
 
 #### VxBox Constructor
 
@@ -73,4 +73,4 @@ Widget build(BuildContext context) {
 }
 ```
 
-**_Above code creates a container of red color along with height & width of 100px with a child as VelocityX Text which is centered_**
+> Above code creates a container of red color along with height & width of 100px with a child as VelocityX Text which is centered

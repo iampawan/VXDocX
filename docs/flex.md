@@ -17,10 +17,10 @@ VelocityX includes utilities for controlling the direction of widgets.
 
 A VelocityX VStack widget which is used to display it's children in vertical array. VStack widget does not scroll automatically, If VStack has more children than the available room then it is considered as an error.
 
-If you have N number of widget as children for VStack and you want to scroll them. Then consider using `scorllVertical()` extention.
+If you have N number of widget as children for VStack and you want to scroll them. Then consider using `scorllVertical()` extension.
 
 :::note
-`scorllVertical()` is an extention which makes children scroll vertically.
+`scorllVertical()` is an extension which makes children scroll vertically.
 :::
 
 For a Horizontal variant, see [HStack](#hstack-class).
@@ -37,7 +37,7 @@ VStack(
 ).scrollVertical().p20();
 ```
 
-**_Above code displays all the texts in Vertical manner_**
+> Above code displays all the texts in Vertical manner
 
 #### VStack Constructor
 
@@ -67,10 +67,10 @@ VStack(this.children, // should not be null
 
 A VelocityX HStack widget which is used to display it's children in Horizontal array.HStack widget dose not scroll automatically, If HStack has more children then available room then it is considered as an error.
 
-If you have N number of widget as children for HStack and you want to scroll them. Then consider using `scrollHorizontal()` extention.
+If you have N number of widget as children for HStack and you want to scroll them. Then consider using `scrollHorizontal()` extension.
 
 :::note
-`scrollHorizontal()` is an extention which makes children scroll Horizontal.
+`scrollHorizontal()` is an extension which makes children scroll Horizontal.
 :::
 
 For a Vertical variant, see [VStack](#vstack-class).
@@ -87,7 +87,7 @@ HStack(
 ).scrollHorizontal().p20();
 ```
 
-**_Above code displays all the texts in Horizontal manner_**
+> Above code displays all the texts in Horizontal manner
 
 #### HStack Constructor
 
@@ -135,7 +135,7 @@ ZStack(
 ).p20();
 ```
 
-**_Above code displays Overlapping Box(containers) which are align in center_**
+> Above code displays Overlapping Box(containers) which are align in center
 
 #### ZStack Constructor
 
@@ -180,7 +180,7 @@ VxBlock(
 );
 ```
 
-**_Above code displays Text which is taking full available width of the screen/device_**
+> Above code displays Text which is taking full available width of the screen/device
 
 #### VxBlock Constructor
 
@@ -232,7 +232,7 @@ VxInlineBlock(
 );
 ```
 
-**_Above code displays Overlapping Box(containers) which are align in center_**
+> Above code displays Overlapping Box(containers) which are align in center
 
 #### VxInlineBlock Constructor
 
