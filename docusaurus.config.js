@@ -8,6 +8,7 @@ module.exports = {
   organizationName: "mtechviral", // Usually your GitHub org/user name.
   projectName: "velocityx",
 
+
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/dracula'),
@@ -45,10 +46,10 @@ module.exports = {
               label: "Getting Started",
               to: "docs/install",
             },
-            {
-              label: "Second Doc",
-              to: "docs/doc2",
-            },
+            // {
+            //   label: "Second Doc",
+            //   to: "docs/doc2",
+            // },
           ],
         },
         {
