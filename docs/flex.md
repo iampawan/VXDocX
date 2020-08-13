@@ -159,4 +159,55 @@ ZStack(
 
 - Overflow **_overflow_** : Whether overflowing children should be clipped.
 
----
+
+### VxBlock class
+
+A VelocityX VxBlock widget is used to display it's children at block-level.
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+
+:::note
+Use `verticalDirection` property to vertically align the children of VxBlock class.Default direction is down
+:::
+
+#### VxBlock Sample
+
+```dart
+VxBlock(
+    children: [
+        "VelocityX is Super".text.make().box.height(90).red500.make(),
+        "VelocityX increase productivity".text.make().box.red500.make()
+    ],
+    verticalDirection: VerticalDirection.up,
+);
+```
+
+**_Above code displays Text which is taking full available width of the screen/device_**
+
+#### VxInlineBlock Constructor
+
+```dart
+  VxBlock({
+    Key key,
+    MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
+    TextDirection textDirection,
+    VerticalDirection verticalDirection = VerticalDirection.down,
+    TextBaseline textBaseline,
+    List<Widget> children = const <Widget>[],
+  });
+```
+
+#### VxBlock Properties
+
+- Key **_key_** : Controls how one widget replaces another widget in the tree.
+
+- List<Widgets\> **_children_** : The widgets below this widget in the tree.
+
+- MainAxisAlignment **_alignment_** : How the children should be placed along the main axis.
+
+- TextDirection **textDirection** : Controls the directionality of the text.
+
+- VerticalDirection **verticalDirection** : Controls the vertical direction of childers.
+
+- Overflow **_overflow_** : Whether overflowing children should be clipped.
+
+
