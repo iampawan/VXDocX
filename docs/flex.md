@@ -159,8 +159,6 @@ ZStack(
 
 - Overflow **_overflow_** : Whether overflowing children should be clipped.
 
----
-
 ### VxBlock class
 
 A VelocityX VxBlock widget is used to display it's children at block-level.
@@ -182,7 +180,7 @@ VxBlock(
 );
 ```
 
-**_Above code displays  Text which is taking full available width of the screen/device_**
+**_Above code displays Text which is taking full available width of the screen/device_**
 
 #### VxBlock Constructor
 
