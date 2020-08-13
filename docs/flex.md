@@ -15,12 +15,12 @@ VelocityX includes utilities for controlling the direction of widgets.
 
 ### VStack class
 
-A VelocityX VStack widget which is used to display it's children in Vertical array.VStack widget dose not scroll automatically, If VStack has more children then available room then it is considered as an error.
+A VelocityX VStack widget which is used to display it's children in vertical array. VStack widget does not scroll automatically, If VStack has more children than the available room then it is considered as an error.
 
 If you have N number of widget as children for VStack and you want to scroll them. Then consider using `scorllVertical()` extention.
 
 :::note
-`scorllVertical()` is a extention which makes children scroll Vertically.
+`scorllVertical()` is an extention which makes children scroll vertically.
 :::
 
 For a Horizontal variant, see [HStack](#hstack-class).
@@ -61,7 +61,7 @@ VStack(this.children, // should not be null
 
 - MainAxisSize **_axisSize_** : How much space should be occupied in the main axis.
 
------------------------
+---
 
 ### HStack class
 
@@ -70,7 +70,7 @@ A VelocityX HStack widget which is used to display it's children in Horizontal a
 If you have N number of widget as children for HStack and you want to scroll them. Then consider using `scrollHorizontal()` extention.
 
 :::note
-`scrollHorizontal()` is a extention which makes children scroll Horizontal.
+`scrollHorizontal()` is an extention which makes children scroll Horizontal.
 :::
 
 For a Vertical variant, see [VStack](#vstack-class).
@@ -111,7 +111,7 @@ HStack(
 
 - MainAxisSize **_axisSize_** : How much space should be occupied in the main axis.
 
------------------------
+---
 
 ### ZStack class
 
@@ -159,7 +159,6 @@ ZStack(
 
 - Overflow **_overflow_** : Whether overflowing children should be clipped.
 
------------------------
 
 ### VxBlock class
 
@@ -182,7 +181,7 @@ VxBlock(
 );
 ```
 
-**_Above code displays  Text which is taking full available width of the screen/device_**
+**_Above code displays Text which is taking full available width of the screen/device_**
 
 #### VxInlineBlock Constructor
 
@@ -211,53 +210,4 @@ VxBlock(
 
 - Overflow **_overflow_** : Whether overflowing children should be clipped.
 
------------------------
 
-### VxInlineBlock class
-
-A VelocityX VxInlineBlock widget is used to display it's children in-line at block level.
-Using VxInlineBlock you can display children widgets next to each other.
-
-:::note
-Use `verticalDirection` property to vertically align the children of VxInlineBlock class.Default direction is down
-:::
-
-#### VxInlineBlock Sample
-
-```dart
-VxInlineBlock(
-    children: [
-        "VelocityX is Super".text.make().box.height(90).red500.make(),
-        "VelocityX increase productivity".text.make().box.red500.make()
-    ],
-    verticalDirection: VerticalDirection.up,
-);
-```
-
-**_Above code displays Overlapping Box(containers) which are align in center_**
-
-#### VxInlineBlock Constructor
-
-```dart
-  VxInlineBlock({
-    Key key,
-    TextDirection textDirection,
-    VerticalDirection verticalDirection = VerticalDirection.down,
-    TextBaseline textBaseline,
-    List<Widget> children = const <Widget>[],
-  });
-```
-
-#### VxInlineBlock Properties
-
-- Key **_key_** : Controls how one widget replaces another widget in the tree.
-
-- List<Widgets\> **_children_** : The widgets below this widget in the tree.
-
-- TextDirection **textDirection** : Controls the directionality of the text.
-
-- VerticalDirection **verticalDirection** : Controls the vertical direction of childers.
-
-- Overflow **_overflow_** : Whether overflowing children should be clipped.
-
------------------------

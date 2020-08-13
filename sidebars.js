@@ -4,6 +4,6 @@ module.exports = {
     "Customization": ['colors'],
     "Layout": ['padding', 'text','flex','box'],
     "Typography": ['text'],
-    Features: ['mdx'],
+    // Features: ['mdx'],
   },
 };
