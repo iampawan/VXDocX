@@ -53,7 +53,7 @@ Here are a few examples to help you get an idea of how to work with VelocityX Ca
   )
 ```
 
-#### VxBox Properties
+#### VxCard Properties
 
 - Widget **__child_** : The child contained by the VxCard.
 
@@ -67,7 +67,7 @@ Here are a few examples to help you get an idea of how to work with VelocityX Ca
 
 :::
 
-### VxCard Background Color
+### VxCard Color
 
 - There are different ways to give colors to the VelocityX Card.
 
