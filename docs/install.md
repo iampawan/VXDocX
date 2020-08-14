@@ -34,6 +34,6 @@ dependencies:
 import "package:velocity_x/velocity_x.dart";
 ```
 
-:::note
+:::tip
 For better readability of the code use 'dart.lineLength': 200 in your fav IDE for dart formatting.
 :::

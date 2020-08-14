@@ -8,6 +8,7 @@ module.exports = {
   organizationName: "mtechviral", // Usually your GitHub org/user name.
   projectName: "velocityx",
 
+
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/dracula'),
@@ -20,7 +21,7 @@ module.exports = {
         alt: "Vx Logo",
         src: "img/vx.svg",
       },
-      links: [
+      items: [
         {
           to: "docs/install",
           activeBasePath: "docs",
@@ -45,10 +46,10 @@ module.exports = {
               label: "Getting Started",
               to: "docs/install",
             },
-            {
-              label: "Second Doc",
-              to: "docs/doc2",
-            },
+            // {
+            //   label: "Second Doc",
+            //   to: "docs/doc2",
+            // },
           ],
         },
         {
@@ -93,13 +94,13 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/iampawan/VXDocX/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+            "https://github.com/iampawan/VXDocX/edit/master/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
