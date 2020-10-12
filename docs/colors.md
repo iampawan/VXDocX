@@ -1,6 +1,6 @@
 ---
 id: colors
-slug: docs/colors
+slug: colors
 title: Colors
 ---
 
