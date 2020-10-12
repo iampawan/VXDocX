@@ -1,5 +1,6 @@
 ---
 id: colors
+slug: docs/colors
 title: Colors
 ---
 
