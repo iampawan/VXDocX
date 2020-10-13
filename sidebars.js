@@ -5,6 +5,6 @@ module.exports = {
     "Layout": ['padding', 'text', 'flex', 'box', 'card', "list"],
     Typography: ["text"],
     Features: ["responsive"],
-    Extensions: ["context", "string"],
+    Extensions: ["extensions/context", "extensions/string"],
   },
 };
