@@ -15,6 +15,18 @@ module.exports = {
       additionalLanguages: ['dart'],
 
     },// Usually your repo name.
+    algolia: {
+      apiKey: '8f1278af6e2c6fc548b49f4eaf34b7af',
+      indexName: 'velocityx',
+
+      // Optional: see doc section bellow
+      contextualSearch: false,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     navbar: {
       title: "VelocityX",
       logo: {
