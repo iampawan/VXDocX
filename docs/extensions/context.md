@@ -7,10 +7,10 @@ VelocityX gives you powerful extensions for BuildContext.
 
 ## Navigation
 
-**`nav` extension for getting NavigatorState**
+**`navigation` extension for getting NavigatorState**
 
 ```dart
- context.nav
+ context.navigation
 
  It is equivalent to Navigator.of(context)
 ```
