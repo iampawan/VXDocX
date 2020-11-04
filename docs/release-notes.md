@@ -6,6 +6,24 @@ sidebar_label: Release Notes
 
 ### **What's new in this version of VelocityX**
 
+## [1.0.0] - November 03, 2020
+
+- Added VxTimeline widget.
+- Added VxSkeleton widget with skeleton extension.
+- Added VxMarquee widget with marquee extension.
+- Added VxBadge widget with badge extension.
+- Added VxToast widget with showToast & showLoading context extension.
+- Extensions for ScrollController added.
+- withAnimation & withRepeatAnimation added.
+- onTap, onInkTap series added for more ease.
+- VxTextField added.
+- VxAnimatedHeight added.
+- Offset, preferredSize, sliverBoxAdapter extensions added.
+- vxPreviewRoute added along with materialRoute & cupertinoRoute extensions.
+- expand,backgroundColor,cornerRadius,keepAlive,onFeedBackTap extensions added.
+- Mouse Region extension methods added.
+- Material extension added.
+
 ## [0.5.0] - October 11, 2020
 
 - Compatible with latest flutter versions.
