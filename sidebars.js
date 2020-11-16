@@ -4,7 +4,8 @@ module.exports = {
     Customization: ["colors"],
     "Layout": ['padding', 'text', 'flex', 'box', 'card', "list"],
     Typography: ["text"],
-    Features: ["responsive"],
+    Features: ["features/responsive"],
+    SuperVx: ["supervx/vxtoast"],
     Extensions: ["extensions/context", "extensions/string"],
   },
 };
