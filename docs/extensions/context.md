@@ -117,4 +117,4 @@ As per our survey, this is a very much used styling.
 
 ---
 
-## [Check Responsive Props Using BuildContext Here](/responsive.md)
+## [Check Responsive Props Using BuildContext Here](/features/responsive.md)

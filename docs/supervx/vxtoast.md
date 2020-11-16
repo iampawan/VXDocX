@@ -9,7 +9,7 @@ VelocityX gives you VxToast to show toast in your flutter app.
 
 ## Video Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Peo5Wuos8CM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="235" src="https://www.youtube.com/embed/Peo5Wuos8CM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 :::
 
 ## Using VxToast class
