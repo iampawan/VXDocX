@@ -107,6 +107,11 @@ Mostly used as a boolean to check if the device is a mobile (Android & iOS)
 
 ## BuildContext for MediaQuery extensions
 
+## Video Tutorial
+
+<iframe width="300" height="185" src="https://www.youtube.com/embed/LMqPIfWW-JQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
+
 **`mq` to access mediaquery**
 
 ```dart

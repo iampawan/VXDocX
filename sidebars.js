@@ -5,7 +5,7 @@ module.exports = {
     "Layout": ['padding', 'text', 'flex', 'box', 'card', "list"],
     Typography: ["text"],
     Features: ["features/responsive"],
-    SuperVx: ["supervx/vxtoast"],
+    SuperVx: ["supervx/vxtoast","supervx/vxstepper"],
     Extensions: ["extensions/context", "extensions/string"],
   },
 };

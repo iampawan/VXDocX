@@ -55,12 +55,12 @@ Both of these works perfectly fine. So it is your call whatever you prefer.
 
 Colons can be used to align columns.
 
-| Prop         |        Default         |                             Description |
-| ------------ | :--------------------: | --------------------------------------: |
-| showTime     |          2000          |            To set duration of the toast |
-| bgColor      |                        |      Sets background color of the toast |
-| textColor    |                        |            Sets text color of the toast |
-| textSize     |           14           |        Sets text font size of the toast |
-| position     | VxToastPosition.bottom | Available options - top, center, bottom |
-| pdHorizontal |           20           |                 Sets horizontal padding |
-| pdVertical   |           10           |                   Sets vertical padding |
+| Prop (Type)                |        Default         |                             Description |
+| -------------------------- | :--------------------: | --------------------------------------: |
+| showTime (int)             |          2000          |            To set duration of the toast |
+| bgColor (Color)            |                        |      Sets background color of the toast |
+| textColor (Color)          |                        |            Sets text color of the toast |
+| textSize (int)             |           14           |        Sets text font size of the toast |
+| position (VxToastPosition) | VxToastPosition.bottom | Available options - top, center, bottom |
+| pdHorizontal (double)      |           20           |                 Sets horizontal padding |
+| pdVertical (double)        |           10           |                   Sets vertical padding |
