@@ -22,7 +22,7 @@ Use methods for (widgets & setting a value) and getters for (properties & gettin
 
 ```javascript
 dependencies:
-    velocity_x: ^1.0.0
+    velocity_x: ^1.0.1
 ```
 
 > You can install the above dependency by running the following code with pub:
