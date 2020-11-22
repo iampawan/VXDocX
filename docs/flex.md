@@ -5,13 +5,17 @@ title: Flex
 
 VelocityX includes utilities for controlling the direction of widgets.
 
-| Vx Widget       | Flutter Widget |
-| --------------- | :------------: |
-| VStack()        |    Column()    |
-| HStack()        |     Row()      |
-| ZStack()        |    Stack()     |
-| VxBlock()       |       -        |
-| VxInlineBlock() |       -        |
+| Vx Widget       | Flutter Widget | Extension              |
+| --------------- | :------------: | ---------------------- |
+| VStack()        |    Column()    | .vStack() or .column() |
+| HStack()        |     Row()      | .hStack() or .row()    |
+| ZStack()        |    Stack()     | .zStack() or .stack()  |
+| VxBlock()       |       -        | -                      |
+| VxInlineBlock() |       -        | -                      |
+
+:::tip
+You can either use the widgets or their extension methods. Both works equally well. It's your own preference.
+:::
 
 ### VStack class
 
@@ -35,6 +39,16 @@ VStack(
         Text("Yet, Another Sample Text"),
     ],
 ).scrollVertical().p20();
+```
+
+##### Using Extension Method
+
+```dart
+    [
+        Text("VelocityX is Super"),
+        Text("Sample Text"),
+        Text("Yet, Another Sample Text"),
+    ].vStack().scrollVertical().p20();
 ```
 
 > Above code displays all the texts in Vertical manner
@@ -87,6 +101,16 @@ HStack(
 ).scrollHorizontal().p20();
 ```
 
+##### Using Extension Method
+
+```dart
+    [
+        Text("VelocityX is Super").px12(),
+        Text("Sample Text").px12(),
+        Text("Yet, Another Sample Text").px12(),
+    ].hStack().scrollHorizontal().p20();
+```
+
 > Above code displays all the texts in Horizontal manner
 
 #### HStack Constructor
@@ -133,6 +157,16 @@ ZStack(
     ],
     alignment: Alignment.center,
 ).p20();
+```
+
+##### Using Extension Method
+
+```dart
+    [
+        VxBox().blue500.height(110.0).width(110.0).make(),
+        VxBox().green500.height(90.0).width(90.0).make(),
+        VxBox().red500.height(70.0).width(70.0).make(),
+    ].zStack(alignment: Alignment.center).p20();
 ```
 
 > Above code displays Overlapping Box(containers) which are align in center

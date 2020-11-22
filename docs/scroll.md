@@ -24,6 +24,17 @@ Widget build(BuildContext context) {
     );
 ```
 
+#### Using Extension Method
+
+```dart
+Widget build(BuildContext context) {
+    return [
+        'First Text'.text.make(),
+        'Second Text'.text.make()
+      ].vStack().scrollVerticial(physics: AlwaysScrollableScrollPhysics()),
+    ;
+```
+
 > Above code creats a vertical scrollable list with two widgets.
 
 #### `VxScrollVertical` Constructor
@@ -41,16 +52,16 @@ const VxScrollVertical({
 #### `VxScrollVertical` Properties
 
 - `Key` `key` : A Key is an identifier for Widgets, Elements and SemanticsNodes.
-A new widget will only be used to update an existing element if its key is the same as the key of the current widget associated with the element.
+  A new widget will only be used to update an existing element if its key is the same as the key of the current widget associated with the element.
 
 - `Widget` `child` : The widget that scrolls.
-This widget can only have one child. To lay out multiple children, let this widget's child be a widget such as Row, Column, or Stack, which have a children property, and then provide the children to that widget.
+  This widget can only have one child. To lay out multiple children, let this widget's child be a widget such as Row, Column, or Stack, which have a children property, and then provide the children to that widget.
 
 - `EdgeInsetsGeometry` `padding` : The amount of space by which to inset the child..
 
 - `ScrollController` `controller` : An object that can be used to control the position to which this scroll view is scrolled. It can also be used to read the current position, set the initial position or jump to a particular position.
 
-- `ScrollPhysics` `physics`: Determines the physics of a Scrollable widget. The most common scroll physics are `AlwaysScrollableScrollPhysics`, `BouncingScrollPhysics`, `NeverScrollableScrollPhysics`. To know more visit [Flutter Dev Website](https://api.flutter.dev/flutter/widgets/ScrollPhysics-class.html). 
+- `ScrollPhysics` `physics`: Determines the physics of a Scrollable widget. The most common scroll physics are `AlwaysScrollableScrollPhysics`, `BouncingScrollPhysics`, `NeverScrollableScrollPhysics`. To know more visit [Flutter Dev Website](https://api.flutter.dev/flutter/widgets/ScrollPhysics-class.html).
 
 ---
 
@@ -65,8 +76,19 @@ Widget build(BuildContext context) {
       child: <Widget>[
         'First Text'.text.make(),
         'Second Text'.text.make()
-      ].vStack(),
+      ].hStack(),
     );
+```
+
+#### Using Extension Method
+
+```dart
+Widget build(BuildContext context) {
+    return [
+        'First Text'.text.make(),
+        'Second Text'.text.make()
+      ].hStack().scrollHorizontal(),
+    ;
 ```
 
 > Above code creats a horizontal scrollable list with two widgets.
@@ -86,15 +108,15 @@ const VxScrollHorizontal({
 #### `VxScrollHorizontal` Properties
 
 - `Key` `key` : A Key is an identifier for Widgets, Elements and SemanticsNodes.
-A new widget will only be used to update an existing element if its key is the same as the key of the current widget associated with the element.
+  A new widget will only be used to update an existing element if its key is the same as the key of the current widget associated with the element.
 
 - `Widget` `child` : The widget that scrolls.
-This widget can only have one child. To lay out multiple children, let this widget's child be a widget such as Row, Column, or Stack, which have a children property, and then provide the children to that widget.
+  This widget can only have one child. To lay out multiple children, let this widget's child be a widget such as Row, Column, or Stack, which have a children property, and then provide the children to that widget.
 
 - `EdgeInsetsGeometry` `padding` : The amount of space by which to inset the child..
 
 - `ScrollController` `controller` : An object that can be used to control the position to which this scroll view is scrolled. It can also be used to read the current position, set the initial position or jump to a particular position.
 
-- `ScrollPhysics` `physics`: Determines the physics of a Scrollable widget. The most common scroll physics are `AlwaysScrollableScrollPhysics`, `BouncingScrollPhysics`, `NeverScrollableScrollPhysics`. To know more visit [Flutter Dev Website](https://api.flutter.dev/flutter/widgets/ScrollPhysics-class.html). 
+- `ScrollPhysics` `physics`: Determines the physics of a Scrollable widget. The most common scroll physics are `AlwaysScrollableScrollPhysics`, `BouncingScrollPhysics`, `NeverScrollableScrollPhysics`. To know more visit [Flutter Dev Website](https://api.flutter.dev/flutter/widgets/ScrollPhysics-class.html).
 
 ---
