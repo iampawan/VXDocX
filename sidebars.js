@@ -2,10 +2,10 @@ module.exports = {
   someSidebar: {
     "Getting Started": ["install", "release-notes"],
     Customization: ["colors"],
-    "Layout": ['padding', 'text', 'flex', 'box', 'card', "list"],
+    "Layout": ['padding', 'text', 'flex', 'box', 'card', "list", "scroll"],
     Typography: ["text"],
     Features: ["features/responsive"],
-    SuperVx: ["supervx/vxtoast","supervx/vxstepper"],
+    SuperVx: ["supervx/vxtoast", "supervx/vxstepper"],
     Extensions: ["extensions/context", "extensions/string"],
   },
 };
