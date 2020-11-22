@@ -9,7 +9,7 @@ title: VxSwiper
 
 ## Video Tutorial
 
-<iframe width="300" height="185" src="https://www.youtube.com/embed/2w5PXSqWDcs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="300" height="185" src="https://www.youtube.com/embed/5fdyEdMr9kc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 :::
 
 ## Features
