@@ -6,7 +6,7 @@ sidebar_label: Release Notes
 
 ### **What's new in this version of VelocityX**
 
-## [1.3.0] & [2.3.0-nullsafety.0] - Decemeber 29, 2020
+## [1.3.1] & [2.3.1-nullsafety.0] - Decemeber 29, 2020
 
 - Introducing VxShapes with ext: VxCircle -> .circle(), VxEllipse -> .ellipse(), VxCapsule -> .capsule(), VxContinuousRectangle -> .continuousRectangle(), VxBevel -> .bevel(), VxTriangle -> .triangle() and VxTicket -> .ticket()
 - VxPlatform added to create a common widget for different platforms.
