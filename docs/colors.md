@@ -60,6 +60,40 @@ eg: Vx.blueHex900
 
 ---
 
+## Available Utility Methods
+
+> Get color from the hex value
+
+```dart
+Color myColor = Vx.hexToColor(hexCode);
+```
+
+> Get int color from the hex value
+
+```dart
+int myColor = Vx.getColorFromHex(hexCode);
+```
+
+> Get Random Non-Primary Color
+
+```dart
+Color myColor = Vx.randomColor;
+```
+
+> Get Random Non-Primary Color
+
+```dart
+Color myColor = Vx.randomPrimaryColor;
+```
+
+> Get Random Non-Primary Opaque Color
+
+```dart
+Color myColor = Vx.randomOpaqueColor;
+```
+
+---
+
 ## Available Colors
 
 ### Gray
