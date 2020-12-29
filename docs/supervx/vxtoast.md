@@ -3,7 +3,7 @@ id: vxtoast
 title: VxToast
 ---
 
-VelocityX gives you VxToast to show toast in your flutter app.
+### VelocityX gives you VxToast to show toast in your flutter app.
 
 :::important
 
@@ -52,8 +52,6 @@ Both of these works perfectly fine. So it is your call whatever you prefer.
 <img src="https://i.imgur.com/5Kgvk1G.png" alt="Toast sample 2" height="500"/>
 
 ## Properties
-
-Colons can be used to align columns.
 
 | Prop (Type)                |        Default         |                             Description |
 | -------------------------- | :--------------------: | --------------------------------------: |
