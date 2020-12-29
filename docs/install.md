@@ -18,24 +18,24 @@ Use methods for (widgets & setting a value) and getters for (properties & gettin
 
 ## Installation Guide
 
-### Without Null-safety support
+### Without Null safety support
 
 > Add the following dependency into your pubspec.yaml file
 
 ```javascript
 dependencies:
-    velocity_x: ^1.3.0
+    velocity_x: ^1.3.1
 ```
 
 ---
 
-### OR (With Null-safety support)
+### OR (With Null safety support)
 
 > dd the following dependency into your pubspec.yaml file
 
 ```javascript
 dependencies:
-    velocity_x: ^2.3.0-nullsafety.0
+    velocity_x: ^2.3.1-nullsafety.0
 ```
 
 :::note
