@@ -24,7 +24,7 @@ Use methods for (widgets & setting a value) and getters for (properties & gettin
 
 ```javascript
 dependencies:
-    velocity_x: ^1.3.1
+    velocity_x: ^1.4.0
 ```
 
 ---
@@ -52,7 +52,3 @@ Null safety version doesn't support VxAnimator as of now.
 ```javascript
 import "package:velocity_x/velocity_x.dart";
 ```
-
-:::tip
-For better readability of the code use 'dart.lineLength': 200 in your fav IDE for dart formatting.
-:::

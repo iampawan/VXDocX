@@ -8,5 +8,6 @@ module.exports = {
     Responsive: ["features/responsive"],
     SuperVx: ["supervx/vxswiper", "supervx/vxanimator", "supervx/vxplatform", "supervx/vxtoast", "supervx/vxstepper", "supervx/vxrating"],
     Extensions: ["extensions/context", "extensions/string", "extensions/bool"],
+    "State Management": ["vxstate/getting_started", "vxstate/vxstore", "vxstate/vxmutation", "vxstate/vxinterceptor", "vxstate/vxeffects", "vxstate/vxstatewidgets"]
   }
 };

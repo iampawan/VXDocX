@@ -6,6 +6,15 @@ sidebar_label: Release Notes
 
 ### **What's new in this version of VelocityX**
 
+## [1.4.0] - February 10, 2021
+
+- Fixed nullOK issues
+- Added more clippers
+- Added align() method for text and richtext
+- Improvement in textfield
+- Added VxState
+- Minor bug fixes and improvements
+
 ## [1.3.1] & [2.3.1-nullsafety.0] - Decemeber 29, 2020
 
 - Introducing VxShapes with ext: VxCircle -> .circle(), VxEllipse -> .ellipse(), VxCapsule -> .capsule(), VxContinuousRectangle -> .continuousRectangle(), VxBevel -> .bevel(), VxTriangle -> .triangle() and VxTicket -> .ticket()
