@@ -6,6 +6,10 @@ sidebar_label: Release Notes
 
 ### **What's new in this version of VelocityX**
 
+## [1.4.1] - February 12, 2021
+
+- Enhancements
+
 ## [1.4.0] - February 10, 2021
 
 - Fixed nullOK issues

@@ -14,7 +14,7 @@ Widget build(BuildContext context) {
 
     return VxBuilder(
         mutations: {Increment},
-        builder: (_) => Text("${store.count}"),
+        builder: (_,status) => Text("${store.count}"),
     );
 }
 ```
@@ -71,7 +71,13 @@ Widget build(BuildContext context) {
           );
         }
       },
-        builder: (_) => Text("${store.count}"),
+        builder: (_,status) => Text("${store.count}"),
     );
 }
 ```
+
+:::important
+
+VxStatus is mostly useful with VxEffects otherwise you can ignore it.
+
+:::
