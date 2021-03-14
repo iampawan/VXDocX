@@ -18,29 +18,14 @@ Use methods for (widgets & setting a value) and getters for (properties & gettin
 
 ## Installation Guide
 
-### Without Null safety support
+### Now with null-safety
 
 > Add the following dependency into your pubspec.yaml file
 
 ```javascript
 dependencies:
-    velocity_x: ^1.4.1
+    velocity_x: ^2.5.0
 ```
-
----
-
-### OR (With Null safety support)
-
-> dd the following dependency into your pubspec.yaml file
-
-```javascript
-dependencies:
-    velocity_x: ^2.3.1-nullsafety.0
-```
-
-:::note
-Null safety version doesn't support VxAnimator as of now.
-:::
 
 ---
 

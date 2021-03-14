@@ -5,6 +5,21 @@ sidebar_label: Release Notes
 ---
 
 ### **What's new in this version of VelocityX**
+## [2.5.0] - March 13, 2021
+- VxAnimator added.
+- VxLayout added for responsiveness.
+- Direct Text Themes support
+- Extended & Improved Color Pallete
+- New Demo Added
+- Added more gradient options
+- size percentage widget added for sizedbox and container
+- Flat button changed to Material button
+- Fixed nullOK issues
+- Added more clippers
+- Added align() method for text and richtext
+- Improvement in textfield
+- Added VxState
+- Minor bug fixes and improvements
 
 ## [1.4.1] - February 12, 2021
 

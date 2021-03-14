@@ -63,7 +63,7 @@ In your widget if you want to rebuild it after a mutation is executed call `list
 ```dart
 @override
 Widget build(BuildContext context) {
-  VxState.listen(context, to: [Increment]);
+  VxState.watch(context, on: [Increment]);
 
   return ...
 }
