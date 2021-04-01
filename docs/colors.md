@@ -94,7 +94,7 @@ Color myColor = Vx.randomOpaqueColor;
 
 ---
 
-## Available Colors
+## Some Color Samples
 
 ### Gray
 
@@ -236,4 +236,6 @@ Color myColor = Vx.randomOpaqueColor;
 
 ---
 
-## **Checkout the [Color Palette](https://tailwindcss.com/docs/customizing-colors#default-color-palette) here **
+## **Checkout the Full [Color Palette](https://tailwindcss.com/docs/customizing-colors#color-palette-reference) here **
+
+### [Source code](https://github.com/iampawan/VelocityX/blob/dev%23null-safety/lib/src/velocity_xx.dart) for colors can be find here

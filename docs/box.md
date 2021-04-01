@@ -188,6 +188,14 @@ There are multiple getters to align the VxBox
 
 VelocityX offers predefined shadows to be used on VxBox
 
+- outerShadow
+- outerShadowSm
+- outerShadowMd
+- outerShadowLg
+- outerShadowXl
+- outerShadow2Xl
+- outerShadow3Xl
+- noneShadow
 - shadow
 - shadowXs
 - shadowSm

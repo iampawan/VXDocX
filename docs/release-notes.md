@@ -5,7 +5,19 @@ sidebar_label: Release Notes
 ---
 
 ### **What's new in this version of VelocityX**
+
+## [2.6.1] - April 01, 2021
+
+- Fixed issue with ZStack.
+- Fixed issue with isEmptyOrNull String.
+
+## [2.6.0] - March 16, 2021
+
+- VxNavigator (Navigator 2.0) support added.
+- AStack widget added.
+
 ## [2.5.0] - March 13, 2021
+
 - VxAnimator added.
 - VxLayout added for responsiveness.
 - Direct Text Themes support
