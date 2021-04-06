@@ -55,19 +55,76 @@ function Feature({ imageUrl, title, description }) {
 }
 
 function Home() {
+  const pHunt = <a href="https://www.producthunt.com/posts/velocityx?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-velocityx" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=289488&theme=light" alt="VelocityX - A minimalist Flutter framework | Product Hunt" style={{ width: 250, height: 54 }} width={250} height={54} /></a>
+
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
+
     <Layout
       // title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={classnames("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
+      <div className={styles.hero}>
+        <div className={styles.heroInner}>
+          <h1 className={styles.heroProjectTagline}>
+            <img
+              alt="Vx logo"
+              className={styles.heroLogo}
+              src={useBaseUrl('img/vx.svg')}
+            />
+            A minimalist Flutter framework inspired from{' '}
+            <span className={styles.heroProjectKeywords}>TailwindCSS</span>{' '} and{' '}
+            <span className={styles.heroProjectKeywords}>SwiftUI</span> for{' '}
+            <span className={styles.heroProjectKeywords}>rapidly</span> building
+            custom designs{' '}.
 
+          </h1>
+          <div className={styles.indexCtas}>
+            <Link
+              className={styles.indexCtasGetStartedButton}
+              to={useBaseUrl('docs/')}>
+              Start using VelocityX
+            </Link>
+            <div className={styles.space}></div>
+            {pHunt}
+            <div className={styles.space}></div>
+            <span className={styles.indexCtasGitHubButtonWrapper}>
+              <iframe
+                className={styles.indexCtasGitHubButton}
+                src="https://ghbtns.com/github-btn.html?user=iampawan&amp;repo=velocityx&amp;type=star&amp;count=true&amp;size=large"
+                width={160}
+                height={30}
+                frameBorder="0"
+                title="GitHub Stars"
+              />
+            </span>
+            {/* <Link
+              className={'margin-left--md', styles.indexTryMeButton}
+              to="http://demo.velocityx.dev">
+              Try a Demo
+            </Link> */}
+          </div>
+        </div>
+      </div>
+      <div className={styles.announcement}>
+        <div >
+          Latest in Vx - {' '}
+          <Link to={useBaseUrl('/docs/vxstate/getting_started')} className={styles.announcementInner}>
+            State Management
+          </Link>
+        </div>
+      </div>
+
+
+
+      {/* <header className={classnames("hero hero--primary", styles.heroBanner)}>
+        <div className="container">
           <h1 className="hero__title" style={{ color: 'white', fontWeight: 'bold' }}>{siteConfig.title}</h1>
           <p className="hero__subtitle" style={{ color: 'white' }}>{siteConfig.tagline}</p>
+          {pHunt}
           <div className={styles.buttons}>
+            
             <Link
               className={classnames(
                 "button  button--secondary button--lg",
@@ -76,10 +133,13 @@ function Home() {
               to={useBaseUrl("docs/install")}
             >
               Get Started
+              
             </Link>
+
           </div>
+          
         </div>
-      </header>
+      </header> */}
       <main>
         {features && features.length && (
           <section className={styles.features}>
