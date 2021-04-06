@@ -83,7 +83,7 @@ function Home() {
           <div className={styles.indexCtas}>
             <Link
               className={styles.indexCtasGetStartedButton}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('docs/install')}>
               Start using VelocityX
             </Link>
             <div className={styles.space}></div>
