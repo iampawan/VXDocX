@@ -7,6 +7,8 @@ title: VxEllipse
 
 **Use `VxEllipse() or .ellipse()` to draw a ellipse shape.**
 
+<img src="https://i.imgur.com/J1Tgn3b.png" alt="Ellipse sample photo" height="500"/>
+
 > An ellipse aligned inside the frame of the view containing it.
 
 ```dart
