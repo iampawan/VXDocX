@@ -25,6 +25,10 @@ VelocityX allows you to quicky create a Container using `.box()` extension or `V
 | ------------ | :------------: |
 | .box()       |  Container()   |
 
+<img src="https://i.imgur.com/JJeRNPc.png" alt="Toast sample 1" height="500"/>
+
+> Above is an example of a red VxBox with padded text as the child
+
 #### VxBox Sample using widget
 
 ```dart

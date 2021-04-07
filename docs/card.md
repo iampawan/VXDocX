@@ -25,6 +25,10 @@ VelocityX allows you to quicky create a card using ```.card()``` extension or ``
 
 Here are a few examples to help you get an idea of how to work with VelocityX Card widget.
 
+<img src="https://i.imgur.com/hG02S9P.png" alt="Card Example" height="500"/>
+
+>Above is an image showcasing a simple usage of the VxCard Widget
+
 #### VxCard Sample using widget
 
 ```dart
