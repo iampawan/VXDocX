@@ -25,7 +25,7 @@ VelocityX allows you to quicky create a card using ```.card()``` extension or ``
 
 Here are a few examples to help you get an idea of how to work with VelocityX Card widget.
 
-<img src="https://lh3.googleusercontent.com/abwfezo8x8CLWgA-GAML_6oTj5vhBA-yE9Twn16QU3KhiznIqPqxmSE0eSJmlzuvd8r2oX4vrv3RUCJJoLvs-DK9YQhiXabSVDKdLuouOr43YupiDwWm8H7KwdGXS3mEvbvZZH0SnIcdl6CD75Qd7QJqNGH4xLpFrGB3a6kZghnpJrp8a1nk9iwYDyABkobna40SMNCR3YNd4WyJ-VZTgxTrhpuHRGG7qoWwVJfjP90gFIEQTcygVCSP8l3CA5Omy8sAcZF3YZrJGP3NV233CVSKX7ZYlHu0_-H9W-cvXvtmNw_fAJa4mS_0MetpGaqAwsPZJNr4ZwcwkuDIpllPwhZjUtp7ZJDVxGFqw5zHOjGeGnsgLnBvaWWDYt9vMLWSvl0y2zMBHPpj9dzZIboisUAImk30IABJcmiMCk5KNdj7S7w4wRChQfkaYGrthUyHSKrTVkIX0p1ML9caZINUWdWwzZGOSLoc75xNVrnx2emNvmprJl4YIkGQ4QlW1TsBUSTMkAMWxsPkz1uxuHp5u1DTcIU6Kp9YU3NKL6EKwN6jGlMKilgPyEPoY3feXU8aDn2vCGbVWNSTmAd86Gz34ENBmLUigYjk_Y2FcYgWRckUjKGYvce6yteWT8_De9AM0TponFYOJrtfom-kg5F1RAeTi5ThvrEPcgmx98lBpNtDYtYWS3_QJhXh_efxCzNS7vpjRl52rgjbXj-1mp7m0fqF=w429-h952-no?authuser=0" alt="Card Example" height="500"/>
+<img src="https://i.imgur.com/hG02S9P.png" alt="Card Example" height="500"/>
 
 >Above is an image showcasing a simple usage of the VxCard Widget
 
