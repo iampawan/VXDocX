@@ -7,6 +7,8 @@ title: VxCircle
 
 **Use `VxCircle() or .circle()` to draw a circular shape.**
 
+<img src="https://i.imgur.com/erze2pz.png" alt="Circle sample photo" height="500"/>
+
 > The circle’s radius equals half the length of the frame rectangle’s smallest edge.
 
 ```dart
