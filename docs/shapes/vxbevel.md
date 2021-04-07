@@ -7,6 +7,8 @@ title: VxBevel
 
 **Use `VxBevel() or .bevel()` to draw a bevel shape.**
 
+<img src="https://i.imgur.com/DdT6bP1.png" alt="Bevel sample photo" height="500"/>
+
 > A beveled shape with corners, aligned inside the frame of the view containing it.
 
 ```dart
