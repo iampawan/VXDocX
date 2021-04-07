@@ -18,12 +18,16 @@ Use methods for (widgets & setting a value) and getters for (properties & gettin
 
 ## Installation Guide
 
+### Now with null-safety
+
 > Add the following dependency into your pubspec.yaml file
 
 ```javascript
 dependencies:
-    velocity_x: ^1.0.1
+    velocity_x: ^2.6.1
 ```
+
+---
 
 > You can install the above dependency by running the following code with pub:
 > `flutter pub get`
@@ -33,7 +37,3 @@ dependencies:
 ```javascript
 import "package:velocity_x/velocity_x.dart";
 ```
-
-:::tip
-For better readability of the code use 'dart.lineLength': 200 in your fav IDE for dart formatting.
-:::
