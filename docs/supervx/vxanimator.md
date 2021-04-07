@@ -13,6 +13,10 @@ VxAnimator uses [animator](https://pub.dev/packages/animator) package to support
 VxAnimator as of now doesn't work with null safety.
 :::
 
+<img src="https://i.imgur.com/X0n8Eq6.gif" alt="animator sample gif" height="500"/>
+
+> Above is an animated VxBox using the VxAnimator Widget
+
 ## Using VxAnimator
 
 ```dart
@@ -131,6 +135,10 @@ VxAnimator({
 
 ## Example of a single Tween animation:
 
+<img src="https://i.imgur.com/bpenmfz.gif" alt="animator sample gif" height="500"/>
+
+>Above is the output of the code below
+
 ```dart
 
 class AnimatedLogo extends StatelessWidget {
@@ -153,27 +161,31 @@ class AnimatedLogo extends StatelessWidget {
 
 ## Example of a multi-tween animation:
 
+<img src="https://i.imgur.com/Fz4Nfcz.gif" alt="animator sample gif" height="500"/>
+
+> Above is the output of the code below
+
 ```dart
 class AnimatedLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return VxAnimator(
       tweenMap: {
         "scaleAnim": Tween<double>(begin: 0, end: 300),
-        "translateAnim": Tween<Offset>(begin: Offset.zero, end: Offset(2, 0)),
+        "translateAnim": Tween<Offset>(begin: Offset(-2,0), end: Offset(2, 0)),
       },
       cycles: 0,
       builder: (context, animatorState, child ) => Center(
             child: FractionalTranslation(
-              translation: animatorState.getAnimation<double>('translateAnim'),
+              translation: animatorState.getAnimation<Offset>("translateAnim").value,
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
-                height: animatorState.getAnimation<Offset>('scaleAnim'),
-                width:  animatorState.getAnimation<Offset>('scaleAnim'),
+                height: animatorState.getAnimation<double>("scaleAnim").value,
+                width:  animatorState.getAnimation<double>("scaleAnim").value,
                 child: FlutterLogo(),
               ),
             ),
           ),
-    ).make();
+    ).seconds(sec: 3).make();
   }
 }
 ```
