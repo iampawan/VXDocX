@@ -6,6 +6,19 @@ sidebar_label: Release Notes
 
 ### **What's new in this version of VelocityX**
 
+## [3.0.0] - April 19, 2021
+
+- New Widget - VxPinView
+- New Dialogs - VxDialogs
+- New BottomSheets - VxBottomSheet
+- New Preview Widget - VxPreview
+- New Drawers - VxDrawer
+- Added cursor and other props to VxTextField
+- Bug Fixes for VxTextField
+- Breaking - Desktop support added for VxPlatform
+- Minor Bug Fixes
+- Examples updated
+
 ## [2.6.1] - April 01, 2021
 
 - Fixed issue with ZStack.
