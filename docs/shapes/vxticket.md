@@ -7,6 +7,8 @@ title: VxTicket
 
 **Use `VxTicket() or .ticket()` to draw a ticket shape.**
 
+<img src="https://i.imgur.com/NXg6iio.png" alt="Ticket sample photo" height="500"/>
+
 > A movie ticket like shape.
 
 ```dart

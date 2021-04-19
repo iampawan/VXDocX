@@ -7,6 +7,8 @@ title: VxContinuousRectangle
 
 **Use `VxContinuousRectangle() or .continuousRectangle()` to draw a rounded rectangular shape.**
 
+<img src="https://i.imgur.com/gOFdCyg.png" alt="Continuous rectangle sample photo" height="500"/>
+
 > A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
 
 ```dart

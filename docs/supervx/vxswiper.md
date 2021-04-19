@@ -20,17 +20,19 @@ title: VxSwiper
 - Custom child widgets
 - With extension method
 
-<img src="https://im5.ezgif.com/tmp/ezgif-5-791d37e36f60.gif"/>
+<img src="https://i.imgur.com/Xn7sUiv.gif" height="500"/>
+
+> Above is a sample of what it looks like
 
 ## Using VxSwiper
 
 ```dart
  VxSwiper(
-    items: [1,2,3,4,5].map(index) {
+    items: [1,2,3,4,5].map((index) {
       return "Item $index".text.white.make()
          .box.rounded.alignCenter.color(Vx.randomOpaqueColor).make()
          .p4();
-    }).toList(),
+    }).toList());
 )
 ```
 

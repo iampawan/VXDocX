@@ -7,6 +7,8 @@ title: VxTriangle
 
 **Use `VxTriangle() or .triangle()` to draw a triangular shape.**
 
+<img src="https://i.imgur.com/kHNYMlG.png" alt="Sample photo of triangle widget" height="500"/>
+
 > The triangle with 3 sides.
 
 ```dart

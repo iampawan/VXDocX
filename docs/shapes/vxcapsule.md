@@ -7,6 +7,8 @@ title: VxCapsule
 
 **Use `VxCapsule() or .capsule()` to draw a capsule shape.**
 
+<img src="https://i.imgur.com/yZfXq9S.png" alt="Capsule sample photo" height="500"/>
+
 > A capsule shape is equivalent to a rounded rectangle where the corner radius is chosen as half the length of the rectangle’s smallest edge.
 
 ```dart
