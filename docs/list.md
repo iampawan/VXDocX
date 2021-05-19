@@ -3,7 +3,11 @@ id: list
 title: List
 ---
 
-VelocityX includes the pre-build Ordered and Unorders list which you can use directly in the application to list he different widgets.
+VelocityX includes the pre-build Ordered and Unordered list which can be used directly in the application to list different widgets.
+
+<Img src="https://i.imgur.com/n9MbtuO.png" alt="DiscList Example" height="500"/>                     <Img src="https://i.imgur.com/VjzyL5M.png" alt="DiscList Example" height="500"/>
+
+>Above shows examples of the VxDiskList and the VxDecimalList widgets respectively. 
 
 ### VxDiscList class
 
@@ -56,7 +60,7 @@ VxDecimalList is a pre-build widget which will allow you to create ordered bulle
 
 ```dart
 Widget build(BuildContext context) {
-    return VxDiscList([
+    return VxDecimalList([
       "Flutter",
       "VelocityX",
       "Dart",
@@ -69,7 +73,7 @@ Widget build(BuildContext context) {
 #### VxDecimalList Constructor
 
 ```dart
-const VxDiscList(
+const VxDecimalList(
     this._items, {
     Key key,
     this.padding,

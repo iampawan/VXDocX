@@ -3,7 +3,7 @@ id: vxstepper
 title: VxStepper
 ---
 
-> VelocityX gives you <b>VxStepper</b> - A control for incrementing or decrementing a value along with the input field.
+### VelocityX gives you <b>VxStepper</b> - A control for incrementing or decrementing a value along with the input field.
 
 > By default, pressing a stepper’s button increments or decrements the stepper’s value repeatedly. The rate of change depends on the step counter. User can also set value through input field. To turn off this behavior, set the disableInput property to true.
 
@@ -38,13 +38,11 @@ const VxStepper()
 
 :::tip
 
-This widget can be very useful specially for e-commerce applications.
+**This widget can be very useful specially for e-commerce applications.**
 
 :::
 
 ## Properties
-
-Colons can be used to align columns.
 
 | Prop (Type)               | Default |                                           Description |
 | ------------------------- | :-----: | ----------------------------------------------------: |
