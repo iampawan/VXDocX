@@ -23,7 +23,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final _routerDelegate = VxNavigator(
-    pageNotFound: (uri, params) => MaterialPage(
+    notFoundPage: (uri, params) => MaterialPage(
       key: ValueKey('not-found-page'),
       child: Builder(
         builder: (context) => Scaffold(
@@ -34,11 +34,11 @@ class _MyAppState extends State<MyApp> {
       ),
     ),
     routes: {
-      '/': (uri, params) => HomePage(),
+      '/': (uri, params) => MaterialPage(child: HomePage()),
       '/test/todo': (uri, params) =>
-          TestPage(uri),
-      '/result': (uri, params) => ResultPage(),
-      '/login': (uri, params) => LoginPage(),
+          MaterialPage(child: TestPage(uri)),
+      '/result': (uri, params) => MaterialPage(child: ResultPage()),
+      '/login': (uri, params) => MaterialPage(child: LoginPage()),
     },
   );
 
