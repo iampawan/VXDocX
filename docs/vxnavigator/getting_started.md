@@ -5,15 +5,38 @@ title: Getting Started
 
 ## VxNavigator
 
-VxNavigator is based on navigator 2.0 for app and web. It provides many useful methods and send params easily.
+VxNavigator is based on navigator 2.0 for Flutter apps. It provides many useful methods and send params easily.
 
 ## Getting started
 
-Import routing management in the main.dart file and configure routing
+Import routing config in the main.dart file and configure routing
+
+### Initialize routing management
 
 ```dart
 void main() {
+  /// Setting Path Url Strategy for Web
+  Vx.setPathUrlStrategy();
+
   runApp(MyApp());
+}
+
+// First way to monitor changes in the routing stack:
+class MyObs extends VxObserver {
+  @override
+  void didChangeRoute(Uri route, Page page, String pushOrPop) {
+    print("${route.path} - $pushOrPop");
+  }
+
+  @override
+  void didPush(Route route, Route? previousRoute) {
+    print('Pushed a route');
+  }
+
+  @override
+  void didPop(Route route, Route? previousRoute) {
+    print('Popped a route');
+  }
 }
 
 class MyApp extends StatefulWidget {
@@ -22,7 +45,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _routerDelegate = VxNavigator(
+
+
+  final navigator = VxNavigator(
     notFoundPage: (uri, params) => MaterialPage(
       key: ValueKey('not-found-page'),
       child: Builder(
@@ -33,14 +58,47 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
     ),
+    observers: [MyObs()],
+
+    /// Use VxRoutePage for transition
     routes: {
       '/': (uri, params) => MaterialPage(child: HomePage()),
       '/test/todo': (uri, params) =>
           MaterialPage(child: TestPage(uri)),
-      '/result': (uri, params) => MaterialPage(child: ResultPage()),
+      '/result': (uri, params) => VxRoutePage(pageName: "DemoList", child:ResultPage()),
       '/login': (uri, params) => MaterialPage(child: LoginPage()),
+      /// Regex example
+      RegExp(r"^\/nav\/[a-zA-Z0-9]+$"): (uri, param) => MaterialPage(
+          child: Nav4(
+            pathParam: uri.pathSegments[1],
+            queryParams: uri.queryParametersAll,
+          ),
+        ),
+
+      /// Transition example
+       "/page1": (uri, param) => VxRoutePage(
+        child: Page1(),
+        pageName: "page1",
+        transition: (animation, child) => ScaleTransition(
+              alignment: Alignment.bottomLeft,
+              scale: Tween(
+                begin: 0.0,
+                end: 1.0,
+              ).animate(
+                CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeInOut,
+                ),
+              ),
+              child: child,
+            )),
     },
   );
+
+  /// Second way to monitor changes in the routing stack:
+  _navigator.addListener(() {
+    print(_navigator.currentConfiguration!.path);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -60,6 +118,42 @@ key is url
 
 Value is the function to return to the page, uri is the route parameter, and params is the page parameter, which is passed according to the parameter type.
 :::
+
+## Guarded routes
+
+```dart
+ '/safe_route': (uri,_) {
+  if (!isLoggedIn()) return VxRoutePage(pageName: "Home", child: HomePage());
+  return LoginPage();
+}
+```
+
+## Navigate without a context
+
+main.dart
+
+```dart
+final navigator = VxNavigator(
+  routes: {
+    "/": (uri, param) => VxRoutePage(pageName: "DemoList", child: DemoList()),
+    "/demo": (uri, param) => VxRoutePage(pageName: "Demo", child: Demo()),
+);
+
+MaterialApp.router(
+  routerDelegate: navigator,
+  routeInformationParser: const VxInformationParser(),
+)
+```
+
+my_widget.dart
+
+```dart
+import 'main.dart';
+
+void onTap() {
+  _navigator.routeManager.push(Uri.parse("/demo"));
+}
+```
 
 ## Methods
 
@@ -155,3 +249,82 @@ Delete the route at the top of the stack
 ```dart
 context.vxNav.removeLastUri();
 ```
+
+## Custom Animation
+
+```dart
+/// Transition example
+       "/page1": (uri, param) => VxRoutePage(
+        child: Page1(),
+        pageName: "page1",
+        transition: (animation, child) => ScaleTransition(
+              alignment: Alignment.bottomLeft,
+              scale: Tween(begin: 0.0,end: 1.0,
+              ).animate(
+                CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeInOut),
+              ),
+              child: child,
+            )),
+```
+
+## Url Strategy
+
+```dart
+Vx.setPathUrlStrategy();
+```
+
+## Page monitoring
+
+There are two ways to monitor changes in the routing stack:
+
+```dart
+vxNavigator.addListener(() {
+  if (vxNavigator.currentConfiguration == Uri(path: '/')) {
+    /// To do
+  }
+}
+```
+
+Second way (Navigation observers)
+
+```dart
+class MyObs extends VxObserver {
+  @override
+  void didChangeRoute(Uri route, Page page, String pushOrPop) {
+    print("${route.path} - $pushOrPop");
+  }
+
+  @override
+  void didPush(Route route, Route? previousRoute) {
+    print('Pushed a route');
+  }
+
+  @override
+  void didPop(Route route, Route? previousRoute) {
+    print('Popped a route');
+  }
+}
+
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  final navigator = VxNavigator(
+    observers: [MyObs()],
+    routes: {
+    "/": (uri, param) => VxRoutePage(pageName: "DemoList", child: DemoList()),
+    "/demo": (uri, param) => VxRoutePage(pageName: "Demo", child: Demo()),
+  );
+```
+
+## VxNavigator so far
+
+1. [x] Upgrade Flutter v2 to support null safety
+1. [x] Url strategy
+1. [x] Custom animation routing
+1. [x] Regex support
+1. [] Nested routing

@@ -10,11 +10,9 @@ A helper widget built on top of `StreamBuilder` to rebuild a small part of the s
 ```dart
 @override
 Widget build(BuildContext context) {
-    AppStore store = VxState.store;
-
-    return VxBuilder(
+    return VxBuilder<AppStore>(
         mutations: {Increment},
-        builder: (_,status) => Text("${store.count}"),
+        builder: (context,store, status) => Text("${store.count}"),
     );
 }
 ```
@@ -59,9 +57,7 @@ A helper widget which is nothing but a combination of `VxBuilder` and `VxNotifie
 ```dart
 @override
 Widget build(BuildContext context) {
-    AppStore store = VxState.store;
-
-    return VxConsumer(
+    return VxConsumer<AppStore>(
         mutations: {Increment},
         notifications: {
         CallmeBack: (ctx, mut) {
@@ -71,13 +67,13 @@ Widget build(BuildContext context) {
           );
         }
       },
-        builder: (_,status) => Text("${store.count}"),
+        builder: (context, store, status) => Text("${store.count}"),
     );
 }
 ```
 
 :::important
 
-VxStatus is mostly useful with VxEffects otherwise you can ignore it.
+VxStatus is mostly useful with VxEffects or async operations otherwise you can ignore it.
 
 :::
