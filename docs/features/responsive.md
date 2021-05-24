@@ -209,6 +209,24 @@ VxResponsive(
           fallback: Text("Hi Nothing Specified"),
         )
 ```
+---
+
+### VxLayout
+
+:::tip
+[VxLayout] is a type of [LayoutBuilder] with some additional power. VxLayout widget can be used for making responsive apps based on different window sizes.
+:::
+
+```dart
+    VxLayout(
+         builder: (context, size, _) {
+           return ElevatedButton(
+               onPressed: () {},
+               child: size.toString().text.make(),
+            ).w(200).p16();
+          },
+      )
+```
 
 ---
 

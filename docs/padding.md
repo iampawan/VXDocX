@@ -130,4 +130,4 @@ Similarly you can use all other padding methods with this.
 
 ---
 
-# **_Checkout the [Color Palette](https://tailwindcss.com/docs/customizing-colors#default-color-palette) here_**
+

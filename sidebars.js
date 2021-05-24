@@ -2,10 +2,13 @@ module.exports = {
   someSidebar: {
     "Getting Started": ["install", "release-notes"],
     Customization: ["colors"],
-    "Layout": ['padding', 'text', 'flex', 'box', 'card', "list", "scroll"],
+    Layout: ['padding', 'flex', 'box', 'card', "list", "scroll"],
     Typography: ["text"],
-    Features: ["features/responsive"],
-    SuperVx: ["supervx/vxtoast", "supervx/vxstepper"],
-    Extensions: ["extensions/context", "extensions/string"],
-  },
+    Shapes: ["shapes/vxcircle", "shapes/vxcapsule", "shapes/vxellipse", "shapes/vxcontinuous", "shapes/vxbevel", "shapes/vxtriangle", "shapes/vxticket"],
+    Responsive: ["features/responsive"],
+    SuperVx: ["supervx/vxswiper", "supervx/vxanimator", "supervx/vxplatform", "supervx/vxtoast", "supervx/vxstepper", "supervx/vxrating"],
+    Extensions: ["extensions/context", "extensions/string", "extensions/bool"],
+    "State Management": ["vxstate/getting_started", "vxstate/vxstore", "vxstate/vxmutation", "vxstate/vxinterceptor", "vxstate/vxeffects", "vxstate/vxstatewidgets"],
+    "Navigator 2.0": ["vxnavigator/getting_started"]
+  }
 };
