@@ -15,7 +15,7 @@ You can either use `VxScrollVertical`, `VxScrollHorizontal` or `SingleChildScrol
 
 ```dart
 Widget build(BuildContext context) {
-    return VxScrollVerticial(
+    return VxScrollVertical(
       physics: AlwaysScrollableScrollPhysics(),
       child: <Widget>[
         'First Text'.text.make(),
