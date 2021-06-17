@@ -77,7 +77,7 @@ function Home() {
             <span className={styles.heroProjectKeywords}>TailwindCSS</span>{' '} and{' '}
             <span className={styles.heroProjectKeywords}>SwiftUI</span> for{' '}
             <span className={styles.heroProjectKeywords}>rapidly</span> building
-            custom designs{' '}.
+            flutter apps{' '}.
 
           </h1>
           <div className={styles.indexCtas}>
