@@ -1,7 +1,7 @@
 module.exports = {
   title: "VelocityX",
   tagline:
-    "A minimalist Flutter framework inspired from TailwindCSS and SwiftUI for rapidly building custom designs.",
+    "A minimalist Flutter framework inspired from TailwindCSS and SwiftUI for rapidly building flutter apps.",
   url: "https://velocityx.dev",
   baseUrl: "/",
   favicon: "img/vx.svg",

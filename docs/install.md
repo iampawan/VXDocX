@@ -24,7 +24,7 @@ Use methods for (widgets & setting a value) and getters for (properties & gettin
 
 ```javascript
 dependencies:
-    velocity_x: ^3.2.0
+    velocity_x: ^3.3.0
 ```
 
 ---
