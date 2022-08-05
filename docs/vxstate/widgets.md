@@ -11,7 +11,7 @@ A helper widget built on top of `StreamBuilder` to rebuild a small part of the s
 @override
 Widget build(BuildContext context) {
     return VxBuilder<AppStore>(
-        mutations: {Increment},
+        mutations: const {Increment},
         builder: (context,store, status) => Text("${store.count}"),
     );
 }

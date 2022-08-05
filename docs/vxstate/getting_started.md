@@ -28,7 +28,8 @@ Define mutations:
 
 ```dart
 class Increment extends VxMutation<MyStore> {
-  perform() => store.count++;
+  @override
+  perform() => store?.count++;
 }
 ```
 
@@ -68,7 +69,8 @@ class MyStore extends VxStore {
 
 // Mutations
 class Increment extends VxMutation<MyStore> {
-  perform() => store.count++;
+  @override
+  perform() => store?.count++;
 }
 
 class MyApp extends StatelessWidget {

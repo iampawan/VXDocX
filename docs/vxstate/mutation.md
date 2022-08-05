@@ -7,7 +7,8 @@ This is where the app's logic is written. Everything inside `perform` function i
 
 ```dart
 class Increment extends VxMutation<AppStore> {
-  perform() => store.count++;
+  @override
+  perform() => store?.count++;
 }
 ```
 
@@ -17,6 +18,7 @@ Execution can be async too. If you return a `Future` for `perform`, VxState will
 class ExportReport extends VxMutation<AppStore> {
   // This mutation will be notified to widgets
   // only after this is done.
+  @override
   Future<void> perform() async {
     await MyFile().write(store.report);
   }
@@ -29,6 +31,7 @@ To execute some other mutation after one is done you can use `next` call.
 
 ```dart
 class ChangeAvatar extends VxMutation<AppStore> {
+  @override
   perform() {
     final avatar = Image().crop();
 
@@ -46,6 +49,7 @@ If exceptions happen in `perform` they are caught and logged if app is in debug 
 
 ```dart
 class Divide extends VxMutation<AppStore> {
+  @override
   perform() {
     store.count = store.count/store.factor;
   }
@@ -58,7 +62,7 @@ class Divide extends VxMutation<AppStore> {
 
 ## Listening
 
-In your widget if you want to rebuild it after a mutation is executed call `listen` with list of mutations:
+In your widget if you want to rebuild it after a mutation is executed call `watch` with the list of mutations:
 
 ```dart
 @override
