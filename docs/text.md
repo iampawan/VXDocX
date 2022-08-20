@@ -13,7 +13,7 @@ When you are done with the text properties then use .make() to complete it as a 
 Text, SelectableText and RichText works the same just replace text with selectableText or richText.
 :::
 
-> Below are some examples of differet text styles using the VelocityX text properties and widget.
+> Below are some examples of different text styles using the VelocityX text properties and widget.
 
 <img src="https://i.imgur.com/txeFqLq.png" height="500"/>
 
