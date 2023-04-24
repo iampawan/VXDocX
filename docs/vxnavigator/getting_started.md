@@ -96,15 +96,15 @@ class _MyAppState extends State<MyApp> {
   );
 
   /// Second way to monitor changes in the routing stack:
-  _navigator.addListener(() {
-    print(_navigator.currentConfiguration!.path);
+  navigator.addListener(() {
+    print(navigator.currentConfiguration!.path);
   });
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'VxNavigator',
-      routerDelegate: _routerDelegate,
+      routerDelegate: navigator,
       routeInformationParser: VxInformationParser(),
     );
   }
