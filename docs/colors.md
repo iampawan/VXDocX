@@ -80,7 +80,7 @@ int myColor = Vx.getColorFromHex(hexCode);
 Color myColor = Vx.randomColor;
 ```
 
-> Get Random Non-Primary Color
+> Get Random Primary Color
 
 ```dart
 Color myColor = Vx.randomPrimaryColor;
